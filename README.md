@@ -12,7 +12,7 @@ See the references below for more details.
 # Dependences
 
 - `EigOptimization` : This folder contains optimization routines used to minimize the Lyapunov exponent associated with the CM and OS flocking models.
-- 
+  
 - `FlockODEs` : This folder contains the ODEs describing the CM and OS flocking models.
 
 
