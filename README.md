@@ -1,5 +1,5 @@
 # Optimal Flocking Dynamics
-Codes for the optimization of flocking dynamics induced by heterogeneity.
+Codes for the real-time optimization of flocking dynamics with heterogeneous and homogeneous agents.
 
 See the references below for more details.
 
