@@ -5,9 +5,11 @@ See the references below for more details.
 
 # Usage
 
-- `main_CMflock.m` : Compares the real-time optimization of the "centroid model" of flocking (Eq. 1 of Ref. 1). In this model, the agents are tasked to converge to a pre-specified formation while tracking a virtual target moving across space. The communication network is defined by an all-to-all network, weighted according to the relative distance between agents. Data packages are exchanged periodically, resulting in a piecewise-constant model.
+- `main_CMflock.m` : Compares the real-time optimization of the "centroid model" of flocking (Eq. 1 of Ref. 1) for heterogeneous and homogeneous systems. In this model, the agents are tasked to converge to a pre-specified formation while tracking a virtual target moving across space. The communication network is defined by an all-to-all network, weighted according to the relative distance between agents. Data packages are exchanged periodically, resulting in a piecewise-constant model.
 
-- `main_OSflock.m` : Compares the real-time optimization of the "Olfati-Saber model" of flocking (Eq. 9 of Ref. 1). In this model, the agents are tasked to form a cohesive lattice structure while tracking a virtual target. The communication range is limited, resulting in a sparse interaction network. The lattice structure is emergent since the final configuration depends on the agents' initial conditions. The simulation can be performed for agents moving in free space or maneuvering around obstacles.
+- `main_TDflock.m` : Compares the stability of the time-delay consensus model (Eq. 8 of Ref. 1) for an optimal assignment of heterogeneous and homogeneous parameters. In this mdoel, the agents must achieve consensus in position and velocity, converging to the same state. If the system is unstable, the flock of agents may fragment in isolated groups.
+
+- `main_OSflock.m` : Compares the real-time optimization of the "Olfati-Saber model" of flocking (Eq. 9 of Ref. 1) for heterogeneous and homogeneous systems. In this model, the agents are tasked to form a cohesive lattice structure while tracking a virtual target. The communication range is limited, resulting in a sparse interaction network. The lattice structure is emergent since the final configuration depends on the agents' initial conditions. The simulation can be performed for agents moving in free space or maneuvering around obstacles.
 
 # Dependences
 
