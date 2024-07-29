@@ -13,7 +13,7 @@ See the references below for more details.
 
 - `EigOptimization` : This folder contains optimization routines used to minimize the Lyapunov exponent associated with the CM and OS flocking models.
   
-- `FlockODEs` : This folder contains the ODEs describing the CM and OS flocking models.
+- `FlockODEs` : This folder contains the ODEs describing the CM and OS flocking models. The functions `agent_coord` compute the performance metrics (RMSE, lattice deviation energy, relative connectivty, etc.) and return the XY coordinates of the agents and target for each time instant.
 
 # License
 
