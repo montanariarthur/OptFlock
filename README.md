@@ -11,9 +11,9 @@ See the references below for more details.
 
 # Dependences
 
-- `EigOptimization` : This folder contains optimization routines used to minimize the Lyapunov exponent associated with the CM and OS flocking models.
+- `EigOptimization` : This folder contains optimization routines `beta_opt.m` used to minimize the Lyapunov exponent (calculated in `opteigreal.m`) associated with the `CM` and `OS` flocking models for heterogeneous (`het`) and homogeneous (`hom`) systems.
   
-- `FlockODEs` : This folder contains the ODEs describing the CM and OS flocking models. The functions `agent_coord` compute the performance metrics (RMSE, lattice deviation energy, relative connectivty, etc.) and return the XY coordinates of the agents and target for each time instant.
+- `FlockODEs` : This folder contains the ODEs describing the CM and OS flocking models. The functions `agent_coord.m` compute the performance metrics (tracking error, lattice deviation energy, relative connectivty) and the XY coordinates of the agents/target for each time instant in the corresponding models.
 
 # License
 
