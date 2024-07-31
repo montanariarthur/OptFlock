@@ -7,7 +7,7 @@ See the references below for more details.
 
 - `main_CMflock.m` : Compares the real-time optimization of the "centroid model" of flocking (Eq. 1 of Ref. 1) for heterogeneous and homogeneous systems. In this model, the agents are tasked to converge to a pre-specified formation while tracking a virtual target moving across space. The communication network is defined by an all-to-all network, weighted according to the relative distance between agents. Data packages are exchanged periodically, resulting in a piecewise-constant model.
 
-- `main_TDconsensus.m` : Compares the stability of the time-delay consensus model (Eq. 8 of Ref. 1) for an optimal assignment of heterogeneous and homogeneous parameters. In this mdoel, the agents must achieve consensus in position and velocity, converging to the same state. If the system is unstable, the flock of agents may fragment in isolated groups.
+- `main_TDconsensus.m` : Compares the stability optimization of the time-delay consensus model (Eq. 8 of Ref. 1) for heterogeneous and homogeneous systems. In this model, the agents must achieve consensus in position and velocity, converging to the same state. If the system is unstable, the flock of agents fragments into isolated groups.
 
 - `main_OSflock.m` : Compares the real-time optimization of the "Olfati-Saber model" of flocking (Eq. 9 of Ref. 1) for heterogeneous and homogeneous systems. In this model, the agents are tasked to form a cohesive lattice structure while tracking a virtual target. The communication range is limited, resulting in a sparse interaction network. The lattice structure is emergent since the final configuration depends on the agents' initial conditions. The simulation can be performed for agents moving in free space or maneuvering around obstacles.
 
@@ -17,7 +17,7 @@ See the references below for more details.
   
 - `FlockODEs` : This folder contains the ODEs describing the CM (`CMflock_piecewise.m`) and OS (`OSflock.m`) flocking models. The functions `agent_coord.m` compute the performance metrics (tracking error, lattice deviation energy, relative connectivty) and the XY coordinates of the agents/target for each time instant in the corresponding models.
 
-- The time-delay consensus model (`main_TDconsensus.m`) requires installation of the DDE-BIFTOOL toolbox. These codes were tested on version 3.0. See Ref. 3 and their website (https://sourceforge.net/projects/ddebiftool/) for more details.
+- The  time-delay consensus model (`main_TDconsensus.m`) requires installation of the DDE-BIFTOOL toolbox. These codes were tested on version 3.0. See Ref. 3 and their website (https://sourceforge.net/projects/ddebiftool/) for more details.
 
 # License
 
