@@ -4,7 +4,6 @@
 
 clear all; close all; clc;
 addpath([pwd,'/EigOptimization/'])
-addpath([pwd,'/FlockODEs/'])
 
 % Declare parameters
 n = 4; % Number of agents
@@ -27,7 +26,6 @@ end
 lyapexp_hom = lambda_bfgs_mc_hom(minindex_hom);
 b_opt_hom = B_bfgs_mc_hom(:,minindex_hom);
 
-
 % Find best heterogeneous solution
 b0_het = b_opt_hom;
 B_bfgs_mc_het = zeros(n,Nopt);
@@ -42,14 +40,13 @@ end
 lyapexp_het = lambda_bfgs_mc_het(minindex_het);
 b_opt_het = B_bfgs_mc_het(:,minindex_het);
 
-%% TimeDelay_dynamics
-% Calculates the time series of the dynamics of the time delay consensus 
-% model for the optimal choices in the homogeneous and heterogeneous
+%% System simulation for the optimal choices 
+%  of homogeneous and heterogeneous parameters
 
 beta_hom = b_opt_hom*ones(n,1);  % Homogeneous optimal 
 beta_het = b_opt_het; % Heterogeneous optimal 
 
-%%%%--- Parameters vector ---%%%%%
+% Parameters vector
 param.n = n;       
 param.L = L;              
 param.tau = tau;  
@@ -88,7 +85,7 @@ posy_hom = sol_hom.y(n+1:2*n,:);
 velx_hom = sol_hom.y(2*n+1:3*n,:);
 vely_hom = sol_hom.y(3*n+1:4*n,:);
 
-%% Ploting the figures
+%% Plots
 
 % Homogeneous position
 figure();
