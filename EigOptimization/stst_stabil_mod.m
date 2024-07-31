@@ -1,6 +1,7 @@
 function stability=stst_stabil_mod(J1,J2,tau,method) 
-% Modified version of original stst_stabil to directly give the arguments 
-% J1,J2,tau instead of stst (steady state point)
+% This is a modified version of original stst_stabil function
+% that directly returns the arguments J1,J2,tau instead of the
+% variable stst (steady state point).
 % function stability=stst_stabil(stst,method)
 % INPUT:
 %   J1, J2                    -   Jacobians in the generalized eigenvalue problem
@@ -11,9 +12,11 @@ function stability=stst_stabil_mod(J1,J2,tau,method)
 % COMMENT:
 %       Assumes (imag(method.lms_parameter_rho)~=0)
 %       This condition is tested in the code.
-  
+
+% Original code:  
 % (c) DDE-BIFTOOL v. 2.03, 05/03/2007
 % Added on 05/03/2007 
+% Modified by Ana Barioni, 07/30/2024
 
 if imag(method.stability.lms_parameter_rho)==0,
   error(['STST_STABIL: imag(method.lms_parameter_rho)==0 :' ...
