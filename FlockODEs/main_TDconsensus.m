@@ -1,6 +1,6 @@
-%% TimeDelay_optimization 
-% Computes the optimal choice of homogeneous and heterogeneous b for a 
-% given time delay tau
+%% Stability optimization of the time-delay (TD) consensus model.
+% This code computes the optimal choice of homogeneous and heterogeneous
+% parameter 'b' for a given time-delay 'tau'
 
 % Declare parameters
 n = 4; % Number of agents
