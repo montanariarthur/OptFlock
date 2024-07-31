@@ -1,5 +1,6 @@
 function mtle = dde_rightmost_eig(J1,J2,tau)
-%   Computes the maximum eigenvalue of the generalized eigenvalue problem.
+%   Computes the maximum eigenvalue of the generalized eigenvalue problem
+%   for time-delay systems.
 %   J1, J2                    -   Jacobians in the generalized eigenvalue problem 
 %   tau                       -   Time delay
 %   mtle                      -   Maximum eigenvalue
