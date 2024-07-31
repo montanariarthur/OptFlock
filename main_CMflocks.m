@@ -7,7 +7,6 @@
 clear all; close all; clc;
 addpath([pwd,'/EigOptimization/'])
 addpath([pwd,'/FlockODEs/'])
-addpath([pwd,'/ShadedPlots/'])
 
 %% Setup simulation
 
