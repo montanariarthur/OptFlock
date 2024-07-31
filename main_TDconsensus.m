@@ -17,8 +17,8 @@ blim = 1;
 B_bfgs_mc_hom = zeros(1,Nopt);
 lambda_bfgs_mc_hom = zeros(Nopt,1);
 for MCopt = 1:Nopt
-    B_bfgs_mc_hom(1,MCopt) = fmincon(@(b)opteigreal_CSDhom(b,L,tau,n),[b0_hom(1)+1*randn(1,1)],[],[],[],[],0.1,blim);
-    lambda_bfgs_mc_hom(MCopt) = opteigreal_CSDhom(B_bfgs_mc_hom(:,MCopt),L,tau,n);
+    B_bfgs_mc_hom(1,MCopt) = fmincon(@(b)opteigreal_TDhom(b,L,tau,n),[b0_hom(1)+1*randn(1,1)],[],[],[],[],0.1,blim);
+    lambda_bfgs_mc_hom(MCopt) = opteigreal_TDhom(B_bfgs_mc_hom(:,MCopt),L,tau,n);
 end
 
 % Picks the best homogeneous solution
@@ -31,8 +31,8 @@ b0_het = b_opt_hom;
 B_bfgs_mc_het = zeros(n,Nopt);
 lambda_bfgs_mc_het = zeros(Nopt,1);
 for MCopt = 1:Nopt
-    B_bfgs_mc_het(:,MCopt) = fmincon(@(b)opteigreal_CSDhet(b,L,tau,n),[b0_het(1)+0.1*randn(n,1)],[],[],[],[],0.1*ones(n,1),blim*ones(n,1));
-    lambda_bfgs_mc_het(MCopt) = opteigreal_CSDhet(B_bfgs_mc_het(:,MCopt),L,tau,n);
+    B_bfgs_mc_het(:,MCopt) = fmincon(@(b)opteigreal_TDhet(b,L,tau,n),[b0_het(1)+0.1*randn(n,1)],[],[],[],[],0.1*ones(n,1),blim*ones(n,1));
+    lambda_bfgs_mc_het(MCopt) = opteigreal_TDhet(B_bfgs_mc_het(:,MCopt),L,tau,n);
 end
 
 % Picks the best heterogeneous solution
