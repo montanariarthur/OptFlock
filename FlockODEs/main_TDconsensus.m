@@ -2,6 +2,10 @@
 % This code computes the optimal choice of homogeneous and heterogeneous
 % parameter 'b' for a given time-delay 'tau'
 
+clear all; close all; clc;
+addpath([pwd,'/EigOptimization/'])
+addpath([pwd,'/FlockODEs/'])
+
 % Declare parameters
 n = 4; % Number of agents
 Nopt = 100; % Number of optimization trials
