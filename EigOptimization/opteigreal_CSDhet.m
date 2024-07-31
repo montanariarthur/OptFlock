@@ -1,4 +1,4 @@
-function lambdamax = opteigreal_CSDhet(b,L,tau,n)
+function lambdamax = opteigreal_TDhet(b,L,tau,n)
 %   Computes the Lyapunov exponent of the time-delay consensus model.
 %   b                         -   nx1 (heterogeneous) optimization parameter
 %   L, tau, n                 -   system parameters
