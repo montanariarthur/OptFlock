@@ -51,7 +51,7 @@ noise = 0.1;
 % Damping coefficients
 b1 = 5;              % position-integrator feedback gain
 b2 = 5;              % velocity-integrator feedback gain
-blim = Inf;          % upper bound for feedback gain
+blim = 30;          % upper bound for feedback gain
 
 % Initial conditions
 p0 = unifrnd(-2,2,N*dim,1);        % initial position
