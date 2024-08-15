@@ -11,7 +11,7 @@ addpath([pwd,'/FlockODEs/'])
 %% Setup simulation
 
 % Parameters to be optimized
-knob.optB = 'argmax = B';
+knob.optB = 'argmax = B1, B2';
     % argmax = B1     - only position feedback gains are optimized
     % argmax = B2     - only velocity feedback gains are optimized
     % argmax = B      - both feedback gains are constrained to be equal
