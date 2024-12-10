@@ -19,7 +19,7 @@ See the references below for more details.
 
 - The  time-delay consensus model (`main_TDconsensus.m`) requires installation of the DDE-BIFTOOL toolbox. These codes were tested on version 3.0. See Ref. 3 and their website (https://sourceforge.net/projects/ddebiftool/) for more details.
 
-All codes were tested and run in MATLAB 2023a.
+All codes were tested and run in MATLAB 2023a. To run the codes, download all files in this repository to a folder of your choice and run one of the `main` scripts of your choice. All codes generate/include the required data to run the simulations and optimization; simulations can take a few minutes on a standard laptop.
 
 # License
 
