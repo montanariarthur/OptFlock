@@ -124,7 +124,7 @@ t_hom = 0; x_hom = x0;
 B1 = b1*eye(N); B2 = b2*eye(N);
 for k = 1:Nsteps
     % Adjacency matrix computed at time k
-    p_k = x_hom(1:N,end);
+    p_k = x_hom(1:2*N,end);
     [Lap_k,Adj_k] = flocklaplacian(p_k,sigma,beta,K,N);
 
     % Eigenvalue optimization
@@ -167,7 +167,7 @@ B1 = b1*eye(N); B2 = b2*eye(N);
 for k = 1:Nsteps
     k
     % Adjacency matrix computed at time k
-    p_k = x_het(1:N,end);
+    p_k = x_het(1:2*N,end);
     [Lap_k,Adj_k] = flocklaplacian(p_k,sigma,beta,K,N);
 
     % Eigenvalue optimization
