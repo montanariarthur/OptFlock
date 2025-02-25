@@ -11,6 +11,8 @@ See the references below for more details.
 
 - `main_OSflock.m` : Compares the real-time optimization of the "Olfati-Saber model" of flocking (Eq. 9 of Ref. 1) for heterogeneous and homogeneous systems. In this model, the agents are tasked to form a cohesive lattice structure while tracking a virtual target. The communication range is limited, resulting in a sparse interaction network. The lattice structure is emergent since the final configuration depends on the agents' initial conditions. The simulation can be performed for agents moving in free space or maneuvering around obstacles.
 
+- `main_distributedopt.m` : Distributed optimization of the largest Lyapunov exponent in the "centroid model" of flocking (Eq. 1 of Ref. 1) for heterogeneous systems. In the distributed optimization, agents only have access to local information of the state of agents within some specified distance radius. The optimization is thus solved in parallel for each agent `i`, returning the corresponding optimal feedback gains. 
+
 # Dependences
 
 - `EigOptimization` : This folder contains optimization routines (`beta_opt.m`) used to minimize the Lyapunov exponent (calculated in `opteigreal.m`) associated with the corresponding flocking models (`CM`, `TD`, `OS`) for heterogeneous (`het`) and homogeneous (`hom`) systems.
