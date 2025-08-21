@@ -1,7 +1,7 @@
 # Optimal Flocking Dynamics
 Codes for the real-time optimization of flocking dynamics with heterogeneous or homogeneous agents.
 
-See the references below for more details.
+See the references below for more details. If you use this code, please cite Ref. [1].
 
 # Usage
 
@@ -32,7 +32,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 The full text of the GNU General Public License can be found in the file "LICENSE.txt".
 
 # References
-1.  AN Montanari, AED Barioni, C Duan, AE Motter. Optimal flock formation induced by heterogeneity. (2024)
+1.  AN Montanari, AED Barioni, C Duan, AE Motter. Optimal flock formation induced by heterogeneity. *Nature Communications*, to appear (2025)
 2.  R Olfati-Saber. Flocking for multi-agent dynamic systems: Algorithms and theory. *IEEE Transactions on Automatic Control*, **51**:401-420 (2006).
 3.  K Engelborghs, T Luzyanina, D Roose. Numerical bifurcation analysis of delay differential equations using DDE-BIFTOOL. *ACM Transactions on Mathematical Software*, **28**:1-21 (2002).
 
